@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="cameraname"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="7dp"
+
+            ></TextView>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:id="@+id/earthDate_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_textView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="7dp"
+            android:text="earthdate"
+            android:textStyle="italic"
+
+            ></TextView>
+
+
+        <TextView
+            android:id="@+id/sol_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_textView"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_toStartOf="@+id/earthDate_textView"
+            android:layout_toLeftOf="@+id/earthDate_textView"
+            android:textStyle="italic"
+            android:text="sol"
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/apod_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/earthDate_textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            >
+
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/roverName_textView"
+            android:layout_below="@+id/apod_imageView"
+            android:layout_centerHorizontal="true"
+            android:text="Rovername"
+            android:textAllCaps="true"
+            android:textStyle="bold"></TextView>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

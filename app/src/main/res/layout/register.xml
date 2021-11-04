@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/email_editText"
+        android:inputType="textEmailAddress"
+        android:hint="Email address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_baseColor="@color/greyText"
+        app:met_textColorHint="@color/greyText"
+        app:met_primaryColor="@color/greyText"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="6dp"
+        />
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password_editText"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:met_baseColor="@color/greyText"
+        app:met_textColorHint="@color/greyText"
+        app:met_primaryColor="@color/greyText"
+        android:drawableStart="@drawable/ic_password"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="6dp"
+        />
+
+</LinearLayout>
